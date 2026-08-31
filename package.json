@@ -1,18 +1,18 @@
 {
-  "name": "@cloud-copilot/log",
+  "name": "@actsecurity/log",
   "version": "0.1.60",
   "description": "A lightweight JSON logger",
   "keywords": [
     "typescript",
     "logging"
   ],
-  "homepage": "https://github.com/cloud-copilot/log#readme",
+  "homepage": "https://github.com/act-security-labs/log#readme",
   "bugs": {
-    "url": "https://github.com/cloud-copilot/log/issues"
+    "url": "https://github.com/act-security-labs/log/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cloud-copilot/log.git"
+    "url": "git+https://github.com/act-security-labs/log.git"
   },
   "exports": {
     ".": {
@@ -25,7 +25,7 @@
   ],
   "types": "dist/cjs/index.d.ts",
   "license": "MIT",
-  "author": "David Kerber <dave@cloudcopilot.io>",
+  "author": "Act Security",
   "main": "dist/esm/index.js",
   "scripts": {
     "build": "npx tsc -p tsconfig.cjs.json && npx tsc -p tsconfig.esm.json && ./postbuild.sh",
@@ -36,9 +36,10 @@
     "format-check": "npx prettier --check src/"
   },
   "devDependencies": {
-    "@cloud-copilot/prettier-config": "^0.1.0",
+    "@actsecurity/prettier-config": "^0.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^12.0.6",
     "@semantic-release/npm": "^13.1.4",
@@ -49,7 +50,7 @@
     "typescript": "^5.7.2",
     "vitest": "^4.0.18"
   },
-  "prettier": "@cloud-copilot/prettier-config",
+  "prettier": "@actsecurity/prettier-config",
   "release": {
     "branches": [
       "main"
@@ -84,6 +85,12 @@
         "@semantic-release/npm",
         {
           "npmPublish": true
+        }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "successCmd": "echo published=true >> $GITHUB_OUTPUT && echo version=${nextRelease.version} >> $GITHUB_OUTPUT && echo package_name=$(node -p \"require('./package.json').name\") >> $GITHUB_OUTPUT"
         }
       ],
       [
