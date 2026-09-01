@@ -145,7 +145,7 @@ export interface NormalizedLogArgs {
 /**
  * Normalize variadic log arguments into structured parts.
  * Separates string args (joined as message), Error args (serialized), and object args (merged as context).
- * This is useful for adapters that need to convert cloud-copilot's variadic log calls
+ * This is useful for adapters that need to convert act-security's variadic log calls
  * into structured `(message, context)` calls for other logging frameworks.
  *
  * @param args - The variadic arguments passed to a log method
