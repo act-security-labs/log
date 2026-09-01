@@ -1,3 +1,5 @@
+## [0.1.62](https://github.com/act-security-labs/log/compare/v0.1.61...v0.1.62) (2026-09-01)
+
 ## [0.1.61](https://github.com/act-security-labs/log/compare/v0.1.60...v0.1.61) (2026-08-31)
 
 ## [0.1.60](https://github.com/cloud-copilot/log/compare/v0.1.59...v0.1.60) (2026-08-29)
