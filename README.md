@@ -1,19 +1,19 @@
 # Log
 
-[![NPM Version](https://img.shields.io/npm/v/@cloud-copilot/log.svg?logo=nodedotjs)](https://www.npmjs.com/package/@cloud-copilot/log) [![MIT](https://img.shields.io/github/license/cloud-copilot/log)](LICENSE.txt) [![GuardDog](https://github.com/cloud-copilot/log/actions/workflows/guarddog.yml/badge.svg)](https://github.com/cloud-copilot/log/actions/workflows/guarddog.yml) [![Known Vulnerabilities](https://snyk.io/test/github/cloud-copilot/log/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/cloud-copilot/log?targetFile=package.json)
+[![NPM Version](https://img.shields.io/npm/v/@actsecurity/log.svg?logo=nodedotjs)](https://www.npmjs.com/package/@actsecurity/log) [![MIT](https://img.shields.io/github/license/act-security-labs/log)](LICENSE.txt) [![GuardDog](https://github.com/act-security-labs/log/actions/workflows/guarddog.yml/badge.svg)](https://github.com/act-security-labs/log/actions/workflows/guarddog.yml) [![Known Vulnerabilities](https://snyk.io/test/github/act-security-labs/log/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/act-security-labs/log?targetFile=package.json)
 
 A lightweight logger to output JSON structured logs for Typescript.
 
 ## Installation
 
 ```bash
-npm install @cloud-copilot/log
+npm install @actsecurity/log
 ```
 
 ## Basic Usage
 
 ```typescript
-import { StandardLogger } from '@cloud-copilot/log'
+import { StandardLogger } from '@actsecurity/log'
 
 // Create a logger with default log level (warn)
 const logger = new StandardLogger()
@@ -135,7 +135,7 @@ logger.warn(
 ### Application Logging
 
 ```typescript
-import { StandardLogger } from '@cloud-copilot/log'
+import { StandardLogger } from '@actsecurity/log'
 
 class UserService {
   private logger = new StandardLogger('info')
@@ -177,7 +177,7 @@ const logger = new StandardLogger(logLevel as LogLevel)
 Use the `isLogLevel` utility function to validate log level strings:
 
 ```typescript
-import { isLogLevel } from '@cloud-copilot/log'
+import { isLogLevel } from '@actsecurity/log'
 
 // Validate user input
 const userInput = 'debug'
@@ -206,7 +206,7 @@ function createLoggerFromConfig(config: { logLevel?: string }) {
 Full TypeScript support with proper type definitions:
 
 ```typescript
-import { StandardLogger, LogLevel, LogLevels, isLogLevel } from '@cloud-copilot/log'
+import { StandardLogger, LogLevel, LogLevels, isLogLevel } from '@actsecurity/log'
 
 const logger: StandardLogger = new StandardLogger()
 const level: LogLevel = 'info'
