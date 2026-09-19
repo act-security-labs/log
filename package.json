@@ -1,6 +1,6 @@
 {
   "name": "@actsecurity/log",
-  "version": "0.1.62",
+  "version": "0.1.63",
   "description": "A lightweight JSON logger",
   "keywords": [
     "typescript",

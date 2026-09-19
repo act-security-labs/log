@@ -1,3 +1,10 @@
+## [0.1.63](https://github.com/act-security-labs/log/compare/v0.1.62...v0.1.63) (2026-09-19)
+
+
+### Bug Fixes
+
+* use updated dependency updater action ([fb8d8e6](https://github.com/act-security-labs/log/commit/fb8d8e6a877fab08bfff283fc8bb19ec1f160fde))
+
 ## [0.1.62](https://github.com/act-security-labs/log/compare/v0.1.61...v0.1.62) (2026-09-01)
 
 ## [0.1.61](https://github.com/act-security-labs/log/compare/v0.1.60...v0.1.61) (2026-08-31)
