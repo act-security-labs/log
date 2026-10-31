@@ -1,3 +1,5 @@
+## [0.1.70](https://github.com/act-security-labs/log/compare/v0.1.69...v0.1.70) (2026-10-31)
+
 ## [0.1.69](https://github.com/act-security-labs/log/compare/v0.1.68...v0.1.69) (2026-10-24)
 
 ## [0.1.68](https://github.com/act-security-labs/log/compare/v0.1.67...v0.1.68) (2026-10-17)
